@@ -1,0 +1,78 @@
+:root {
+    --grey: hsl(0, 0%, 12%);
+    --green: hsl(75, 94%, 57%);
+    --putih: hsl(0, 0%, 100%);
+    --link: hsl(0, 0%, 20%);
+    --black: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--black);
+    font-size: 14px;
+}
+.container {
+    background-color: var(--grey);
+    width: 25%;
+    text-align: center;
+    margin: 80px auto;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.profile img {
+    border-radius: 100%;
+    width: 90px;
+    margin-top: 30px;
+}
+.profile h3 {
+    color: var(--putih);
+    margin-top: 23px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.profile p {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.deskripsi p {
+    color: var(--putih);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.link-flex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+}
+.link-flex a {
+    width: 80%;
+    background-color: var(--link);
+    color: var(--putih);
+    text-decoration: none;
+    margin: 10px 0;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+.link-flex a:hover {
+    background-color: var(--green);
+    color: var(--grey);
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
